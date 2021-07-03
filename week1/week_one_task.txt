@@ -1,0 +1,246 @@
+
+NUMBER ONE
+Advantages of Agile Methodology.
+1. Improved statkeholder engagement to deliver high quality working software.
+2. Allow project teams to respond to customer reaction and constantly improved the product.
+3. Agile is highly transparent. Every one related in the project has visibility to WIP.
+4. New features are delivered quickly and frequently with a high level of predictability.
+5. In Agile the cost is predictable and is limited to the amount of work that can be done by the team.
+6. There is an opportunity to constantly refine and reprioritize the overall product backlog.
+7. Allow project teams to have acute fucus on the business value and customer needs.
+8. Agile allow for better control over project due to it transparency and quality contol.
+9. Agile implementation reduces the chances of the product delivering lower output or failing.
+10. Agile team have increased autonomy and autority over their decisions.
+
+Disadvantages of Agile Methodology
+1. Less concrete planning: Agile is framed around a boxed approach and priorities are constantly
+   changing. This makes it hard to nail down a set delivery date on project.
+2. Intense commitment: Agile development only work well when the entire development team is 
+   committed to the project for the duration
+3. Team member wear many Hats: Agile team members must be knowledgeable about a variety of processes
+4. Final product can differ: Since the initial Agile plan might not be set, the actual final product 
+   can vary greatly from what was proposed.
+5. Limited documentation: Most often than not in Agile teams, documentation tend to get sidetracked,
+   which makes it harder for new member to get up to speed. 
+
+
+NUMBER TWO
+//setting up my identity
+$git config --global user.name "Kenneth Oghweniale"
+$git config --global user.email "oghwenialekenneth@gmail.com"
+
+//navigating to documents
+$cd "documents"
+
+//creating a repository called myProject
+$mkdir "myProject"
+
+//create three files 
+$touch myProject1.kt
+$touch myProject2.kt
+$touch myProject3.kt
+
+//initializing git
+$git init
+
+//tell git to track the three file created
+$git add myProject1.kt
+$git add myProject1.kt
+$git add myProject1.kt
+ 
+//To check the status of athe files
+$git status
+
+//commit
+$git commit -a -m "add myProject files"
+
+//to see the history of your commit
+$git log
+
+//cloning
+$git remote add origin https://www.github.com/"Kenneth Oghweniale"/myProject.git
+
+//The push command tells Git where to put our commits
+$git push -u origin master
+
+
+
+
+
+
+NUMBER THREE
+fun main(args: Array<String>) {
+    //String data type
+    var str : String = "I an a String Data Type"
+    println("str is declared as a string data type")
+
+    //Boolean data type
+    var yes : Boolean = true
+    print("yes is declare as boolean dataType")
+
+    //Character data type
+    var letter : Char = 'A'
+    println("letter is declared as a character data type")
+
+    //Number Data Type
+    var num : Number = 120
+    println("num is declared as a Number data type")
+
+    //Byte data type
+    var num1 : Byte = 120
+    println("num1 is declared as a character data type")
+
+    //Short data type
+    var num2 : Short = 20000
+    println("num2 is declared as a Short data type")
+
+    //Int data type
+    var num3 : Int = 123456
+    println("num3 is declared as a Int data type")
+
+    //Double data type
+    var num4 : Double = 10.54
+    println("num4 is declared as a Double data type")
+
+    //Long data type
+    var num5 : Long = 1234567
+    println("num5 is declared as a Long data type")
+
+    //Long data type
+    var num6 = 120L
+    println("num6 is declared as a Long data type")
+
+    //Float data type
+    var num7 : Float = 120.8F
+    println("num7 is declared as a Float data type")
+
+    //Float data type
+    var num8 = 120.4F
+    println("num8 is declared as a Float data type")
+}
+
+
+NUMBER FOUR
+//function without return keyword
+fun main(args: Array<String>) {
+    myName()
+    sum()
+    minus()
+    multiply()
+    division()
+}
+
+fun myName(){
+    println("My name is Kennth Oghweniale")
+}
+fun sum() {
+    var num1 : Int = 23
+    var num2 : Int = 35
+    var sum : Int = num1 + num2
+    println(sum)
+}
+
+fun minus() {
+    var num1 : Int = 45
+    var num2 : Int = 35
+    var minus : Int = num1 - num2
+    println(minus)
+}
+
+fun multiply() {
+    var num1 : Int = 45
+    var num2 : Int = 35
+    var multiply : Int = num1 * num2
+    println(multiply)
+}
+
+fun division() {
+    var num1 : Int = 45
+    var num2 : Int = 5
+    var division : Int = num1 / num2
+    println(division)
+}
+
+//funtion with the return keyword
+fun main(args: Array<String>) {
+    var result1 = myName()
+    println(result1)
+    var result2 = sum()
+    println(result2)
+    var result3 = minus()
+    println(result3)
+    var result4 = multiply()
+    println(result4)
+    var result5 = division()
+    println(result5)
+}
+
+fun myName() : String{
+    var str : String = "My name is Kennth Oghweniale"
+    return str
+}
+fun sum() : Int{
+    var num1 : Int = 23
+    var num2 : Int = 35
+    var sum : Int = num1 + num2
+    return sum
+}
+
+fun minus() : Int{
+    var num1 : Int = 45
+    var num2 : Int = 35
+    var minus : Int = num1 - num2
+    return minus
+}
+
+fun multiply() : Int{
+    var num1 : Int = 45
+    var num2 : Int = 35
+    var multiply : Int = num1 * num2
+    return multiply
+}
+
+fun division() : Int{
+    var num1 : Int = 45
+    var num2 : Int = 5
+    var division : Int = num1 / num2
+    return division
+}
+
+//function with Argument
+fun main(args: Array<String>) {
+    var result1 : String = myName("Kenneth Oghweniale", 30, "Software Developer")
+    println(result1)
+    var result2 : Int = sum(54,34)
+    println(result2)
+    var result3 : Int = minus(54,34)
+    println(result3)
+    var result4 = multiply(45,5)
+    println(result4)
+    var result5 = division(45, 5)
+    println(result5)
+}
+
+fun sum(num1 : Int, num2 : Int) : Int{
+    var sum = num1 + num2
+    return sum
+}
+
+fun minus(num1 : Int, num2 : Int) : Int{
+    var minus : Int = num1 - num2
+    return minus
+}
+
+fun multiply(num1 : Int, num2 : Int) : Int{
+    var multiply : Int = num1 * num2
+    return multiply
+}
+
+fun division(num1 : Int, num2 : Int) : Int{
+    var division : Int = num1 / num2
+    return division
+}
+fun myName(Name : String, Age : Int, Occupation : String) : String{
+    var hello = "My name is " + Name + ", I am " + Age + " years old, and I am a " + Occupation
+    return hello
+}
